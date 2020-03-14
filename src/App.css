@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: url('./assets/rockywall.png');
+
 }
 
 .App-logo {
