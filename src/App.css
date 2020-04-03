@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: url('./assets/rockywall.png');
+  background-image: url('./assets/rockywall.png');
 
 }
 
@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('./assets/rockywall.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+p {
+  color: black;
 }
 
 .App-link {
