@@ -12,18 +12,18 @@ import './App.css';
 export default function Portfolio(props) {
 const [currentPage, setCurrentPage] = useState(0)
   
-
+const PageHeaders = ["Landing", "Welcome", "Projects", "About", "Contact"]
   const handlePageChange = number => {
    setCurrentPage( number ); // set currentPage number, to reset it from the previous selected.
   };
 
   const getPagesNumbers = () => {
     const pageNumbers = [];
-
+    
     for (let i = 1; i <= 5; i++) {
       pageNumbers.push(
         <Pagination.Item key={i} eventKey={i - 1} onClick={ () => handlePageChange(i-1)}>
-          {i}
+          {PageHeaders[i-1]}
         </Pagination.Item>,
       );
     }
