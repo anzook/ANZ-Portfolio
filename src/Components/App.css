@@ -1,17 +1,20 @@
+
+
+/* carreid over from app.css */
 .App {
   text-align: center;
   background-image: url('../assets/rockywall.png');
-
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 75vmin;
+  /* pointer-events: none; */
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
@@ -34,6 +37,37 @@ p {
   color: #61dafb;
 }
 
+/* animations */
+
+.animatedFastFade {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animatedSlowFade {
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -42,3 +76,88 @@ p {
     transform: rotate(360deg);
   }
 }
+
+.title {
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.links .link {
+  margin-top: 10px;
+}
+
+.component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.scrolling-content {
+  margin-left: 150px;
+}
+
+.component.first-component {
+  background-image: url('../assets/rockywall.png');
+    position: relative;
+}
+
+.first-component--inside-scroller {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+
+}
+
+.component.second-component {
+  background-image: url('../assets/rockywall.png');
+}
+
+.component.third-component {
+  background-color: blue;
+}
+
+.component.fourth-component {
+  background-color: yellow;
+}
+
+.component.fifth-component {
+  background-color: purple;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: block;
+  justify-content: center;
+  width: 175px;
+  margin-left: 5px;
+  /* float: left; */
+}
+
+.pagination-item {
+  margin: 15px;
+}
+
+.pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
+  margin-right: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
+      margin-right: 5px;
+  }
+}
+
