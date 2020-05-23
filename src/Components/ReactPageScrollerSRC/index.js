@@ -8,14 +8,14 @@ if (!global._babelPolyfill) {
   require("babel-polyfill");
 }
 
-const DEFAULT_ANIMATION_TIMER = 1000;
+const DEFAULT_ANIMATION_TIMER = 700;
 const DEFAULT_ANIMATION = "ease-in-out";
 const DEFAULT_CONTAINER_HEIGHT = "100vh";
-const DEFAULT_CONTAINER_WIDTH = "100vw";
+const DEFAULT_CONTAINER_WIDTH = "85vw";
 const DEFAULT_COMPONENT_INDEX = 0;
 const DEFAULT_COMPONENTS_TO_RENDER_LENGTH = 0;
 
-const DEFAULT_ANIMATION_TIMER_BUFFER = 200;
+const DEFAULT_ANIMATION_TIMER_BUFFER = 150;
 const KEY_UP = 38;
 const KEY_DOWN = 40;
 const DISABLED_CLASS_NAME = "rps-scroll--disabled";

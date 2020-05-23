@@ -10,6 +10,10 @@ export default () => {
     <Col className =""  md="auto">
     <Media>
     <img src={logo} className="align-self-center App-logo logo-main" alt="logo" />
+    </Media>
+    </Col>
+    <Col className =""  md="auto">
+    <Media>
     <Media.Body>
       <h5>Media Heading</h5>
       <p>

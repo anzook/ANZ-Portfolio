@@ -101,11 +101,12 @@ p {
 
 .component.first-component {
   background-image: url('../assets/rockywall.png');
-    position: relative;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .first-component--inside-scroller {
-  position: absolute;
+  position: relative;
   right: 20px;
   top: 100px;
 
@@ -113,14 +114,20 @@ p {
 
 .component.second-component {
   background-image: url('../assets/rockywall.png');
+  max-height: 100%;
+    overflow: hidden;
 }
 
 .component.third-component {
   background-color: blue;
+  max-height: 100%;
+    overflow: hidden;
 }
 
 .component.fourth-component {
   background-color: yellow;
+  max-height: 100%;
+    overflow: hidden;
 }
 
 .component.fifth-component {
