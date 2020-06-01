@@ -152,7 +152,28 @@ h2 {
 
 .pagination-item {
   margin: 10px;
-  width: 100px;
+  width: 90px;
+}
+
+.pagination-additional-class-small {
+  margin: 0;
+  position: fixed;
+  top: 10px;
+  display: block;
+  justify-content: center;
+  width: 35px;
+  /* margin-left: 1px; */
+  /* float: left; */
+}
+.pagination-item-small {
+  margin: 5px;
+  width: 35px;
+}
+
+.sideBar {
+  width: 15vw;
+  max-width: 130px;
+  min-width: 40px;
 }
 
 /* a:active {

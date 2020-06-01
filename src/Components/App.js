@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Pagination, Container, Row, Col, Button } from "react-bootstrap";
+import MediaQuery from 'react-responsive'
 
 import ReactPageScroller from "./ReactPageScrollerSRC";
 import FirstComponent from "./FirstComponent";
@@ -39,25 +40,9 @@ const activePage = currentPage +1;
       <React.Fragment>
 <Container fluid>
   <Row className="justify-content-md-center">
-  <Col xs={1}>
-  </Col >
-    <Col className ="scrolling-content"  xs={11}>
-    <ReactPageScroller
-          pageOnChange={handlePageChange}
-          customPageNumber={currentPage} >
-          <FirstComponent />
-          <SecondComponent />
-          <ThirdComponent />
-          <FourthComponent />
-          {/* <FifthComponent /> */}
-        </ReactPageScroller>
-     </Col>
-     <Col >
-  {/* <Pagination className="pagination-additional-class">
-          {pagesNumbers}
-        </Pagination> */}
-    {/* <Pagination /> */}
-    <div className="pagination-additional-class">
+  <Col className="sideBar">
+  <MediaQuery minDeviceWidth={950}>
+  <div className="pagination-additional-class">
       <Button variant="outline-dark" key={1} active={1 === activePage} onClick={ () => handlePageChange(0)} className="pagination-item">
       {/* <img src={logo} className="align-self-center App-logo logo-main" alt="logo" />  */}
       ANZ
@@ -72,7 +57,41 @@ const activePage = currentPage +1;
     Contact
       </Button>
         </div>
-    </Col>
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={400} maxDeviceWidth={950}>
+  <div className="pagination-additional-class-small">
+      <Button variant="outline-dark" key={1} active={1 === activePage} onClick={ () => handlePageChange(0)} className="pagination-item-small">
+      {/* <img src={logo} className="align-self-center App-logo logo-main" alt="logo" />  */}
+      1
+      </Button>
+      <Button variant="outline-dark" key={2} active={2 === activePage}  onClick={ () => handlePageChange(1)} className="pagination-item-small">
+   2
+      </Button>
+      <Button variant="outline-dark" key={3} active={3 === activePage} onClick={ () => handlePageChange(2)} className="pagination-item-small">
+     3
+      </Button>
+      <Button variant="outline-dark" key={4} active={4 === activePage} onClick={ () => handlePageChange(3)} className="pagination-item-small">
+    4
+      </Button>
+        </div>
+        </MediaQuery>
+  </Col >
+    <Col className ="scrolling-content" >
+    <ReactPageScroller
+          pageOnChange={handlePageChange}
+          customPageNumber={currentPage} >
+          <FirstComponent />
+          <SecondComponent />
+          <ThirdComponent />
+          <FourthComponent />
+          {/* <FifthComponent /> */}
+        </ReactPageScroller>
+     </Col>
+  {/* <Pagination className="pagination-additional-class">
+          {pagesNumbers}
+        </Pagination> */}
+    {/* <Pagination /> */}
+
   </Row>
 </Container>
         

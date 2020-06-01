@@ -8,7 +8,7 @@ if (!global._babelPolyfill) {
   require("babel-polyfill");
 }
 
-const DEFAULT_ANIMATION_TIMER = 700;
+const DEFAULT_ANIMATION_TIMER = 550;
 const DEFAULT_ANIMATION = "ease-in-out";
 const DEFAULT_CONTAINER_HEIGHT = "100vh";
 const DEFAULT_CONTAINER_WIDTH = "85vw";
