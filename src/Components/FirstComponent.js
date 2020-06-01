@@ -15,18 +15,11 @@ export default () => {
     <Col className =""  md="auto">
     <Media>
     <Media.Body>
-      <h5>Media Heading</h5>
+      <h5>Portfolio</h5>
       <p>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-        tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-        fringilla. Donec lacinia congue felis in faucibus.
-      </p>
-
-      <p>
-        Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu
-        leo. Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.
+      As a Full Stack Software Developer, I look to design solutions that encompass the whole of a system. 
+        With my experience as a professional engineer, I know how to consider problems holistically and find novel ways to address those challenges. 
+        Earning a reputation among my peers as an intuitive leader, I can jump into any situation and add value through my teamwork, creativity, and technical abilities. Having successfully improved my organization’s communication skills and policy by establishing a data visualization center, I chose to foster my talents in software engineering.
       </p>
     </Media.Body>
     </Media>
