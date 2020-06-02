@@ -1,17 +1,24 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 
+import ContactForm from './ContactForm';
+import Footer from './Footer';
 
 export default () => {
   return (
     <div className="component fourth-component">
- <Container fluid>
-  <Row className="justify-content-md-center">
-    <Col className =""  md="auto">   
+    <Container fluid>
+  <Row className="justify-content-md-center fourth-component">
+    <Col className ="justify-content-center">   
     <h3>Let's get in touch</h3>
-    <a href="mailto:alexnzook@gmail.com?subject=[Portfolio Inquiry]">Email me</a>
+    < ContactForm />
+    < Footer /> 
+
     </Col>
     </Row>
-    </Container>    </div>
+   
+   
+    </Container>
+    </div>
   );
 };

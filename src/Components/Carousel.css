@@ -1,0 +1,10 @@
+.carousel {
+    width: 400px; 
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
