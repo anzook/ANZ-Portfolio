@@ -119,15 +119,15 @@ p {
 }
 
 .component.third-component {
-  background-color: blue;
+  background-image: url('../assets/rockywall.png');
   max-height: 100%;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .component.fourth-component {
-  background-color: yellow;
+  background-image: url('../assets/rockywall.png');
   max-height: 100%;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .component.fifth-component {

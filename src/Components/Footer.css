@@ -2,7 +2,8 @@ div .footer {
 
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: -30px;
+    width: 110%;
     height: 75px;
     line-height: 75px;
     background-color: #f5f5f5;

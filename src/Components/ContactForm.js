@@ -11,7 +11,7 @@ export default function ProjectCarousel() {
         
           return (
 
-            <Form className="justify-content-md-center" md={{ offset: 3 }}>
+            <Form className="justify-content-md-center" >
   <Form.Group controlId="formBasicEmail">
   <Form.Row>
     <Col>
@@ -32,14 +32,20 @@ export default function ProjectCarousel() {
 
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows="3" />
+    <Form.Control as="textarea" rows="2" />
   </Form.Group>
-  <Form.Group controlId="formBasicCheckbox">
+  <Form.Row>
+    <Col>
+    <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Resume request" />
   </Form.Group>
-  <Button variant="primary" type="submit">
+    </Col>
+    <Col>
+    <Button variant="primary" type="submit">
     Send
   </Button>
+    </Col>
+    </Form.Row>
 </Form>
         );
       }
