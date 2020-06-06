@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import { Pagination, Container, Row, Col, Button, Nav, NavItem, Navbar } from "react-bootstrap";
+import { Media, Container, Row, Col, Button, Nav, NavItem, Navbar } from "react-bootstrap";
 import MediaQuery from 'react-responsive'
 
 import ReactPageScroller from "./ReactPageScrollerSRC";
-import FirstComponent from "./FirstComponent";
+// import FirstComponent from "./FirstComponent";
 import SecondComponent from "./SecondComponent";
 import ThirdComponent from "./ThirdComponent";
 import FourthComponent from "./FourthComponent";
+import WelcomeLanding from "./WelcomeLanding";
+
+import logo from './Logo/logo.svg';
+
 // import Pagination from "./Pagination";
 // import FifthComponent from "./FifthComponent";
 import './App.css';
@@ -41,25 +45,36 @@ const [currentPage, setCurrentPage] = useState(0)
       <React.Fragment>
 
 <Container fluid>
+  <WelcomeLanding />
   <Row className="justify-content-md-center">
-  <MediaQuery minDeviceWidth={850}>
+  <MediaQuery minDeviceWidth={925}>
+  <Navbar bg="light" expand="lg" className="flex-column">
+
   <Nav activeKey={currentPage} className="flex-column">
-  <Nav.Link eventKey={0} disabled={0 === currentPage} onClick={ () => handlePageChange(0)} >ANZ</Nav.Link>
-  <Nav.Link  eventKey={1} disabled={1 === currentPage} onClick={ () => handlePageChange(1)}>About</Nav.Link>
-  <Nav.Link  eventKey={2} disabled={2 === currentPage} onClick={ () => handlePageChange(2)} >Projects</Nav.Link>
-  <Nav.Link  eventKey={3}  disabled={3 === currentPage} onClick={ () => handlePageChange(3)}  >Contact</Nav.Link>
+  <Navbar.Brand href="#home">      <img
+      src={logo}
+        width="60"
+        height="60"
+        className="d-inline-block align-top"
+        alt="ANZ logo"
+      /></Navbar.Brand>
+  {/* <Nav.Link eventKey={0} disabled={0 === currentPage} onClick={ () => handlePageChange(0)} >ANZ</Nav.Link> */}
+  <Nav.Link  eventKey={0} disabled={0 === currentPage} onClick={ () => handlePageChange(0)}>About</Nav.Link>
+  <Nav.Link  eventKey={1} disabled={1 === currentPage} onClick={ () => handlePageChange(1)} >Projects</Nav.Link>
+  <Nav.Link  eventKey={2}  disabled={2 === currentPage} onClick={ () => handlePageChange(2)}  >Contact</Nav.Link>
 </Nav>
+</Navbar>
 </MediaQuery>
-        <MediaQuery maxDeviceWidth={850}>
+        <MediaQuery maxDeviceWidth={924}>
 <Navbar bg="light" expand="xs">
   <Navbar.Brand href="#home">Alex N Zook - Portfolio</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link   onClick={ () => handlePageChange(0)}>ANZ</Nav.Link>
-      <Nav.Link   onClick={ () => handlePageChange(1)}>About</Nav.Link>
-      <Nav.Link  onClick={ () => handlePageChange(2)}>Projects</Nav.Link>
-      <Nav.Link  onClick={ () => handlePageChange(3)}>Contact</Nav.Link>
+      {/* <Nav.Link   onClick={ () => handlePageChange(0)}>ANZ</Nav.Link> */}
+      <Nav.Link   onClick={ () => handlePageChange(0)}>About</Nav.Link>
+      <Nav.Link  onClick={ () => handlePageChange(1)}>Projects</Nav.Link>
+      <Nav.Link  onClick={ () => handlePageChange(2)}>Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
@@ -69,7 +84,7 @@ const [currentPage, setCurrentPage] = useState(0)
     <ReactPageScroller
           pageOnChange={handlePageChange}
           customPageNumber={currentPage} >
-          <FirstComponent />
+          {/* <FirstComponent /> */}
           <SecondComponent />
           <ThirdComponent />
           <FourthComponent />
