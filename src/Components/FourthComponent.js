@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap';
+// import MediaQuery from 'react-responsive'
+
 
 import ContactForm from './ContactForm';
 import Footer from './Footer';
@@ -37,7 +39,9 @@ export default () => {
           </Button> */}
     </div>
     < Footer /> 
+        {/* <MediaQuery maxDeviceWidth={850}>
 
+        </MediaQuery> */}
     </Col>
     </Row>
    
