@@ -54,7 +54,7 @@ const [currentPage, setCurrentPage] = useState(0)
   <Navbar bg="light" expand="lg" className="flex-column">
 
   <Nav activeKey={currentPage} className="flex-column">
-  <Navbar.Brand href="#home">      <img
+  <Navbar.Brand href="/">      <img
       src={logo}
         width="60"
         height="60"
