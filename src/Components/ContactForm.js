@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Col, Button } from "react-bootstrap";
 
 import './App.css';
@@ -8,7 +8,36 @@ import './Contact.css';
 
 export default function ProjectCarousel() {
         const [index, setIndex] = useState(0);
+        // const [isComplete, setComplete] = useState(false);
+
+        function simulateNetworkRequest() {
+          return new Promise((resolve) => setTimeout(resolve, 2000));
+        }
         
+        function LoadingButton() {
+          const [isLoading, setLoading] = useState(false);
+
+          useEffect(() => {
+            if (isLoading) {
+              simulateNetworkRequest().then(() => {
+                setLoading(false);
+              });
+            }
+          }, [isLoading]);
+        
+          const handleClick = () => setLoading(true);
+        
+          return (
+            <Button
+              variant="dark"
+              type="submit"
+              disabled={isLoading}
+              onClick={!isLoading ? handleClick : null}
+            >
+              {isLoading ? 'Sending…' : 'Send'}
+            </Button>
+          );
+        }
           return (
 
             <Form className="justify-content-md-center" >
@@ -29,21 +58,18 @@ export default function ProjectCarousel() {
       This goes to a single human, not a mailing list- don't worry.
     </Form.Text>
   </Form.Group>
-
-  <Form.Group controlId="exampleForm.ControlTextarea1">
+  <Form.Group controlId="ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows="2" />
+    <Form.Control as="textarea" rows="2" placeholder="Drop me a message"/>
   </Form.Group>
   <Form.Row>
     <Col>
-    <Form.Group controlId="formBasicCheckbox">
+    <Form.Group controlId="formCheckbox">
     <Form.Check type="checkbox" label="Resume request" />
   </Form.Group>
     </Col>
     <Col>
-    <Button variant="primary" type="submit">
-    Send
-  </Button>
+  {LoadingButton()}
     </Col>
     </Form.Row>
 </Form>

@@ -10,6 +10,7 @@ export default () => {
     <h2>About</h2>
     <p>Armed with a solid JavaScript background and certification in Full Stack Development from Johns Hopkins University, I am ready to apply my full stack skills (including node, express, databases, data analytics, and collaborative workflows) to a team in need of a talented developer with a classic engineering foundation.</p>
     </Col>
+  
     </Row>
     </Container>
     </div>

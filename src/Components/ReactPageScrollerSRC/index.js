@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 import { isEqual, isNil, isNull } from "lodash";
 import * as Events from "./Events";
 import usePrevious from "./usePrevValue";
+// import useMediaQuery from 'react-responsive'
+
 
 if (!global._babelPolyfill) {
   require("babel-polyfill");
 }
+
 
 const DEFAULT_ANIMATION_TIMER = 550;
 const DEFAULT_ANIMATION = "ease-in-out";
@@ -312,7 +315,7 @@ const ReactPageScroller = ({
   ]);
 
   return (
-    <div
+      <div
       style={{
         height: containerHeight,
         width: containerWidth,
@@ -333,6 +336,7 @@ const ReactPageScroller = ({
         {setRenderComponents()}
       </div>
     </div>
+    
   );
 };
 

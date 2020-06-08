@@ -1,10 +1,5 @@
 
 
-/* carreid over from app.css */
-.App {
-  /* background-image: url('../assets/rockywall.png'); */
-}
-
 .App-logo {
   max-height: 40vmax;
   /* pointer-events: none; */
@@ -76,19 +71,8 @@ p {
   }
 }
 
-.title {
-  margin: 20px auto 0;
-  text-align: center;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
 .component {
+  padding-top: 15px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -96,8 +80,13 @@ p {
 
 .scrolling-content {
   margin-left: 0;
-  max-width: 90vw;
 }
+
+/* @media only screen and (min-width: 925px) {
+  .scrolling-content {
+    max-width: 90vw;
+  }
+} */
 
 .component.first-component {
   background-image: url('../assets/rockywall.png');
@@ -150,26 +139,6 @@ h2 {
   /* float: left; */
 }
 
-.pagination-item {
-  margin: 10px;
-  width: 90px;
-}
-
-.pagination-additional-class-small {
-  margin: 0;
-  position: fixed;
-  top: 10px;
-  display: block;
-  justify-content: center;
-  width: 35px;
-  /* margin-left: 1px; */
-  /* float: left; */
-}
-.pagination-item-small {
-  margin: 5px;
-  width: 35px;
-}
-
 .sideBar {
   width: 15vw;
   max-width: 130px;
@@ -209,16 +178,26 @@ a:hover, a:focus{
   }
 }
 
-.fourth-component {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -75px; 
+.nav-footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 25px;
 }
 
-.fourth-component:after {
+.navbar-link-small {
+  font-weight: 200;
+}
+
+  /* Below used for footer if needed */
+ /* .fourth-component {
+  /* min-height: 100%; */
+  /* equal to footer height */
+  /* margin-bottom: -75px;  } */ 
+
+/* .fourth-component:after {
   content: "";
   display: block;
   height: 75px; 
-}
+} */
 
 

@@ -14,13 +14,12 @@ export class Project {
       "https://yappeapp.herokuapp.com/",
       "https://github.com/anzook/yappe-app",
       "A social dog care web app",
-      "https://via.placeholder.com/250"
+      "https://via.placeholder.com/500"
     ),
     new Project(
       "YappE TEST",
       "https://yappeapp.herokuapp.com/",
       "https://github.com/anzook/yappe-app",
       "A social dog care web app TEST",
-      "https://via.placeholder.com/250"
-    ),
+      "https://via.placeholder.com/500"    ),
   ]

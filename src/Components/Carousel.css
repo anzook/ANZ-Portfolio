@@ -1,6 +1,13 @@
-.carousel {
-    width: 400px; 
-    margin: 0 auto;
+
+    .carousel {
+width: 35vw;  
+}
+
+@media (max-width: 925px) {
+    .carousel {
+        width: 55vw;  
+        height:auto;
+    }
 }
 
 .carousel-caption {
