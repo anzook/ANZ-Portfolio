@@ -127,7 +127,7 @@ h2 {
   margin: auto;
   text-align: center;
 }
-
+/* 
 .pagination-additional-class {
   margin: 0;
   position: fixed;
@@ -137,7 +137,7 @@ h2 {
   width: 100px;
   margin-left: 5px;
   /* float: left; */
-}
+
 
 .sideBar {
   width: 15vw;

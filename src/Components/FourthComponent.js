@@ -5,8 +5,10 @@ import MediaQuery from 'react-responsive'
 
 import ContactForm from './ContactForm';
 // import Footer from './Footer';
+import './FourthComponent.css';
 
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faTwitterSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => {
@@ -50,19 +52,19 @@ export default () => {
       justifyContent: 'center',
   }}>
    
-          {/* <Button href="mailto:alexnzook@gmail.com?subject=Profile Inquiry">
+          {/* <Button className="SocialButton" href="mailto:alexnzook@gmail.com?subject=Profile Inquiry">
             <FontAwesomeIcon icon={faHome} /> Email
           </Button> */}
-          <Button variant="dark" href="https://github.com/anzook" target="_blank">
-            <FontAwesomeIcon icon={faHome} /> GitHub
+          <Button className="SocialButton" variant="dark" href="https://github.com/anzook" target="_blank">
+            <FontAwesomeIcon icon={faGithubSquare} /> GitHub
           </Button>
-          <Button variant="dark" href="https://www.linkedin.com/in/alexnzook/" target="_blank">
-            <FontAwesomeIcon icon={faHome} /> LinkedIn
+          <Button className="SocialButton" variant="dark" href="https://www.linkedin.com/in/alexnzook/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
           </Button>
-          <Button variant="dark" href="">
-            <FontAwesomeIcon icon={faHome} /> Twitter
+          <Button className="SocialButton" variant="dark" href="https://twitter.com/lxzook" target="_blank">
+            <FontAwesomeIcon icon={faTwitterSquare} /> Twitter
           </Button>
-          {/* <Button href="https://anzook.github.io/Portfolio/assets/files/ANZ_Engineering.pdf"
+          {/* <Button className="SocialButton" href="https://anzook.github.io/Portfolio/assets/files/ANZ_Engineering.pdf"
               target="_blank">   
                  <FontAwesomeIcon icon={faHome} /> Resume
           </Button> */}
