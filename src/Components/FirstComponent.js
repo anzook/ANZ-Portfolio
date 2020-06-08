@@ -1,3 +1,5 @@
+// DEPRECIATED - condensed landing page and about, this component remains in case I would like to repurpose it
+
 import React from "react";
 import logo from './Logo/logo.svg';
 import { Container, Row, Col, Media } from 'react-bootstrap';

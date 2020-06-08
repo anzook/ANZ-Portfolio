@@ -18,7 +18,7 @@ useEffect(() => {
 });
 
   return (  <Modal
-    size="lg"
+    size="md"
     show={show}
     onHide={() => setShow(false)}
     delay={3000} autohide
@@ -26,14 +26,14 @@ useEffect(() => {
     centered
     >
     {/* <Modal.Header closeButton> */}
-    <Modal.Header style={{
+    {/* <Modal.Header style={{
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
   }} >
       <Modal.Title  id="example-modal-sizes-title-lg"  >
 Welcome - ANZ - Portfolio      </Modal.Title>
-    </Modal.Header>
+    </Modal.Header> */}
     <Modal.Body className="socialDiv"
     style={{
       display: 'flex',

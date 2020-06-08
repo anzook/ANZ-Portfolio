@@ -12,7 +12,9 @@ import WelcomeLanding from "./WelcomeLanding";
 import logo from './Logo/logo.svg';
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 // import Pagination from "./Pagination";
 // import FifthComponent from "./FifthComponent";
@@ -71,11 +73,19 @@ const [currentPage, setCurrentPage] = useState(0)
 Alex N. Zook
 </div>
 <div >
-<Nav.Link href="mailto:alexnzook@gmail.com?SUBJECT=Portfolio Inquiry" >Email <FontAwesomeIcon icon={faEnvelope} /></Nav.Link>
+<Nav.Link title="Send me an email" href="mailto:alexnzook@gmail.com?SUBJECT=Portfolio Inquiry" >Email <FontAwesomeIcon icon={faEnvelope} /></Nav.Link>
 </div>
 <div>
-&copy; 2020
+{/* &copy; */}
+2020
+<a className="SocialIcon"  title="Link to GirHub repo for this site" href="https://github.com/anzook" target="_blank">
+            <FontAwesomeIcon icon={faGithubSquare} size = '2x'/>
+          </a>
 </div>
+<div>
+
+          </div>
+ 
 </Nav>
 </Navbar>
 
@@ -102,7 +112,7 @@ Alex N. Zook
       <Nav.Link  onClick={ () => handlePageChange(2)}>Contact</Nav.Link>
     </Nav>
     <Navbar.Text  className="navbar-text small text-right justify-content-end" >
-Alex N. Zook  <a className="navbar-link-small" href="mailto:alexnzook@gmail.com?SUBJECT=Portfolio Inquiry" ><FontAwesomeIcon icon={faEnvelope} /> Email </a>  &copy; 2020 
+Alex N. Zook  <a title="Send me an email" className="navbar-link-small" href="mailto:alexnzook@gmail.com?SUBJECT=Portfolio Inquiry" ><FontAwesomeIcon icon={faEnvelope} /> Email </a>  &copy; 2020 
 </Navbar.Text>
   </Navbar.Collapse>
 </Navbar>

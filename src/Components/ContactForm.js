@@ -40,22 +40,22 @@ export default function ProjectCarousel() {
         }
           return (
 
-            <Form className="justify-content-md-center" >
+            <Form className="justify-content-md-center" autocomplete="on">
   <Form.Group controlId="formBasicEmail">
   <Form.Row>
     <Col>
-    <Form.Label>First name</Form.Label>
-      <Form.Control placeholder="First name" />
+    <Form.Label for="fname">First name</Form.Label>
+      <Form.Control placeholder="First name" type="text" id="fname" name="fname"/>
     </Col>
     <Col>
-    <Form.Label>Last name</Form.Label>
-      <Form.Control placeholder="Last name" />
+    <Form.Label for="lname">Last name</Form.Label>
+      <Form.Control placeholder="Last name" type="text" id="lname" name="lname"/>
     </Col>
   </Form.Row>
-    <Form.Label>Email</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Label for="email">Email</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" id="email" name="email"/>
     <Form.Text className="text-muted">
-      This goes to a single human, not a mailing list- don't worry.
+      Don't worry, this just goes to me, not a mailing list
     </Form.Text>
   </Form.Group>
   <Form.Group controlId="ControlTextarea1">
